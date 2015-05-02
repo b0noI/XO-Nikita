@@ -15,7 +15,7 @@ public class GameStarter {
     public void startGame() {
         playerHelper.initPlayer();
         do {
-            new Move(rules, playerHelper.getCurrentPlayer(), field);
+            new Move(rules, playerHelper.getCurrentPlayer(), field).move();
             playerHelper.changeCurrentPlayer();
         }while (!rules.isWin());
         System.out.println(playerHelper.getCurrentPlayer().getName() + " is win");
