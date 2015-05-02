@@ -4,10 +4,10 @@ import org.apache.log4j.Logger;
 import org.testng.Reporter;
 
 
-public class Log4Test {
-    private Log4Test() {}
+public class Log4Net {
+    private Log4Net() {}
 
-    private static final Logger LOGGER = Logger.getLogger(Log4Test.class);
+    private static final Logger LOGGER = Logger.getLogger(Log4Net.class);
 
     // ****************** Default message content ********************
     private static final String INFO_LOG = "INFO: \"%s\"";

@@ -14,7 +14,7 @@ public class PropertyLoader {
         try {
             props.load(PropertyLoader.class.getResourceAsStream(PROPERTY_FILE));
         } catch (IOException e) {
-            Assert.fail(Log4Test.info(name));
+            Assert.fail(Log4Net.info(name));
         }
         String value = "";
         if (name != null)
