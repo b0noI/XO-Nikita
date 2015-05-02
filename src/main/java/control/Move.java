@@ -6,9 +6,11 @@ import model.IRules;
 public class Move {
     //TODO create move realize
 
-    IRules rules;
-    IPlayer player;
-    IField field;
+    private IRules rules;
+
+    private IPlayer player;
+
+    private IField field;
 
     public Move(IRules rules, IPlayer player, IField field) {
         this.rules = rules;

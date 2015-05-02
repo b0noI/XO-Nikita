@@ -1,6 +1,5 @@
 package main;
 
-
 import model.GameStarter;
 
 public class Main {

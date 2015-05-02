@@ -4,14 +4,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- * Created by никита on 01.05.2015.
- */
 public class ConsoleRead {
 
     public static String consoleInput;
-    public static String stopInput = "press Enter for End";
 
+    public static String stopInput = "press Enter for End";
 
     public static String readFromConsole(String message){
 

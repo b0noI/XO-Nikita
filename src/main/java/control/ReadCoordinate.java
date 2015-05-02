@@ -1,13 +1,13 @@
 package control;
 
-/**
- * Created by никита on 01.05.2015.
- */
 public class ReadCoordinate extends ConsoleRead {
 
     private static int CoordinateX;
+
     private static int CoordinateY;
+
     private static String setX = "please enter X coordinate: ";
+
     private static String setY = "please enter Y coordinate: ";
 
 

@@ -2,12 +2,11 @@ package model;
 
 import control.ReadName;
 
-/**
- * Created by никита on 01.05.2015.
- */
 public class PlayerHelper {
     private IPlayer byXPlayer;
+
     private IPlayer byOPlayer;
+
     private IPlayer currentPlayer = byXPlayer;
 
     public void initPlayer() {
