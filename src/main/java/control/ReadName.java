@@ -1,5 +1,7 @@
 package control;
 
+import view.ConsoleRead;
+
 public class ReadName extends ConsoleRead {
 
     private String playerName;

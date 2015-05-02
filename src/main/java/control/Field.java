@@ -29,4 +29,6 @@ public class Field implements IField {
             figureField[x][y] = figure;}
         else {}
     }
+
+
 }
