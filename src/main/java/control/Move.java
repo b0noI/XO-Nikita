@@ -1,7 +1,9 @@
 package control;
 
+import model.Coordinate;
 import model.IPlayer;
 import model.IRules;
+import view.IGameViewHelper;
 
 public class Move {
     //TODO create move realize
@@ -12,6 +14,12 @@ public class Move {
 
     private IField field;
 
+    private IGameViewHelper gameViewHelper;
+
+    private int coordinateX;
+
+    private int coordinateY;
+
     public Move(IRules rules, IPlayer player, IField field) {
         this.rules = rules;
         this.player = player;
@@ -20,10 +28,16 @@ public class Move {
 
     public void move(){
         do {
-        ReadCoordinate.setCoordinateX();
-        ReadCoordinate.setCoordinateY();}
-        while (!field.isFieldUnitEmpty(ReadCoordinate.getCoordinateX(), ReadCoordinate.getCoordinateY()));
-        field.setFigureOnField(ReadCoordinate.getCoordinateX(), ReadCoordinate.getCoordinateY(), player.getFigure());
+
+            try {
+                coordinateX = gameViewHelper.getCoordinate(Coordinate.X);
+                coordinateY = gameViewHelper.getCoordinate(Coordinate.Y);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        while (!field.isFieldUnitEmpty(coordinateX, coordinateY));
+        field.setFigureOnField(coordinateX, coordinateY, player.getFigure());
     }
 
 
