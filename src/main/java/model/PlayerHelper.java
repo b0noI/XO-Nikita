@@ -1,25 +1,18 @@
 package model;
 
-import control.ReadName;
+import view.ViewUserConsoleHelper;
 
 public class PlayerHelper {
     private IPlayer byXPlayer;
 
     private IPlayer byOPlayer;
 
-    private IPlayer currentPlayer = byXPlayer;
+    private IPlayer currentPlayer;
 
     public void initPlayer() {
-        byXPlayer = new Player(new ReadName("enter Player X name").getPlayerName(), Figure.X);
-        byOPlayer = new Player(new ReadName("enter Player O name").getPlayerName(), Figure.O);
-    }
-
-    public IPlayer getByXPlayer() {
-        return byXPlayer;
-    }
-
-    public IPlayer getByOPlayer() {
-        return byOPlayer;
+        byXPlayer = new Player(new ViewUserConsoleHelper(Figure.X).getPlayerName(), Figure.X);
+        byOPlayer = new Player(new ViewUserConsoleHelper(Figure.O).getPlayerName(), Figure.O);
+        currentPlayer = byOPlayer;
     }
 
     public IPlayer getCurrentPlayer() {

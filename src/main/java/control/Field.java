@@ -3,15 +3,10 @@ package control;
 import model.Figure;
 
 public class Field implements IField {
-    //TODO create field
 
-    private final int arrayLength = 3;
+    private final int ARRAY_FIELD_SIZE = 3;
 
-    Figure[][] figureField = new Figure[arrayLength][arrayLength];
-
-    public Figure[][] getFigureField() {
-        return figureField;
-    }
+    Figure[][] figureField = new Figure[ARRAY_FIELD_SIZE][ARRAY_FIELD_SIZE];
 
     public Figure getFigureFromPosition(final int x, final int y){
         return figureField[x][y];

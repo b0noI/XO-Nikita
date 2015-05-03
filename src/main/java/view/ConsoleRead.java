@@ -1,5 +1,7 @@
 package view;
 
+import model.IPlayer;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -8,13 +10,14 @@ public class ConsoleRead {
 
     public static String consoleInput;
 
-    public static String stopInput = "press Enter for End";
+    private static final String HOW_TO_END_PROGRAM = "Enter exit for End";
 
     public static String readFromConsole(String message){
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in) );
+
         System.out.println(message);
-        System.out.println(stopInput);
+
 
             try {
                 consoleInput = br.readLine();
@@ -28,12 +31,14 @@ public class ConsoleRead {
     }
 
     private static void checkEmptyFieldAndEndProgram() {
-        if(!consoleInput.equals("")){
+        if(consoleInput.equals("exit")){
             System.out.println("User end programm");
             System.exit(0);
         }
-        ;
     }
 
+    public static void instructionHowStopProgram(){
+        System.out.println(HOW_TO_END_PROGRAM);
+    }
 
 }
