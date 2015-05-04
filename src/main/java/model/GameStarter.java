@@ -3,6 +3,7 @@ package model;
 import control.Field;
 import control.Move;
 import view.ViewGameConsoleHelper;
+import view.ViewUserConsoleHelper;
 
 public class GameStarter {
     private PlayerHelper playerHelper = new PlayerHelper();
@@ -17,9 +18,10 @@ public class GameStarter {
         playerHelper.initPlayer();
         do {
             playerHelper.changeCurrentPlayer();
+            new ViewUserConsoleHelper(playerHelper.getCurrentPlayer()).getInitMoveMessage();
             new Move(rules, playerHelper.getCurrentPlayer(), field, viewGameConsoleHelper).move();
         }while (!rules.isWin());
-        System.out.println(playerHelper.getCurrentPlayer().getName() + " is win by " + playerHelper.getCurrentPlayer().getFigure() );
+        new ViewUserConsoleHelper(playerHelper.getCurrentPlayer()).getWinnerMessage();
         System.exit(0);
     }
 }

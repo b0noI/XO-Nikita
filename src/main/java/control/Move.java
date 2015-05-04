@@ -29,7 +29,7 @@ public class Move {
     public void move(){
         //todo refactor string
         do {
-            System.out.println("Player " + player.getName() + " " + player.getFigure() + " : ");
+
             try {
                 coordinateX = gameViewHelper.getCoordinate(Coordinate.X);
                 coordinateY = gameViewHelper.getCoordinate(Coordinate.Y);
