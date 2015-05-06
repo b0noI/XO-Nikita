@@ -1,6 +1,6 @@
 package view;
 
-public interface IUserViewHelper {
+interface IUserViewHelper {
 
-    public String getPlayerName();
+    String getPlayerName();
 }

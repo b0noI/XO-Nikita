@@ -5,9 +5,9 @@ import model.Figure;
 
 public interface IField {
 
-    public void setFigureOnField(int x, int y, Figure figure);
+    void setFigureOnField(int x, int y, Figure figure);
 
-    public boolean isFieldUnitEmpty(int x, int y);
+    boolean isFieldUnitEmpty(int x, int y);
 
-    public Figure getFigureFromPosition(final int x, final int y);
+    Figure getFigureFromPosition(final int x, final int y);
 }

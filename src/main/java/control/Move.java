@@ -2,12 +2,9 @@ package control;
 
 import model.Coordinate;
 import model.IPlayer;
-import model.IRules;
 import view.IGameViewHelper;
 
 public class Move {
-
-    private IRules rules;
 
     private IPlayer player;
 
@@ -19,8 +16,7 @@ public class Move {
 
     private int coordinateY;
 
-    public Move(IRules rules, IPlayer player, IField field, IGameViewHelper gameViewHelper) {
-        this.rules = rules;
+    public Move(IPlayer player, IField field, IGameViewHelper gameViewHelper) {
         this.player = player;
         this.field = field;
         this.gameViewHelper = gameViewHelper;

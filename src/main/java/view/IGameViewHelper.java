@@ -4,5 +4,5 @@ import model.Coordinate;
 
 public interface IGameViewHelper {
 
-    public int getCoordinate(Coordinate coordinate) throws Exception;
+    int getCoordinate(Coordinate coordinate) throws Exception;
 }

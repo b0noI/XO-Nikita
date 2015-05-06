@@ -3,6 +3,7 @@ package view;
 import model.Figure;
 import model.IPlayer;
 
+@SuppressWarnings("ALL")
 public class ViewUserConsoleHelper implements IUserViewHelper {
 
 

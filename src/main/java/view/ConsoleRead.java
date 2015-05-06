@@ -1,14 +1,12 @@
 package view;
 
-import model.IPlayer;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ConsoleRead {
+class ConsoleRead {
 
-    public static String consoleInput;
+    private static String consoleInput;
 
     private static final String HOW_TO_END_PROGRAM = "Enter exit for End";
 

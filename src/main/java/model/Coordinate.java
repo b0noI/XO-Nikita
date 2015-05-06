@@ -1,5 +1,5 @@
 package model;
 
 public enum Coordinate {
-    X,Y;
+    X,Y
 }

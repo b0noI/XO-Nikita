@@ -19,7 +19,7 @@ public class GameStarter {
         do {
             playerHelper.changeCurrentPlayer();
             new ViewUserConsoleHelper(playerHelper.getCurrentPlayer()).getInitMoveMessage();
-            new Move(rules, playerHelper.getCurrentPlayer(), field, viewGameConsoleHelper).move();
+            new Move(playerHelper.getCurrentPlayer(), field, viewGameConsoleHelper).move();
         }while (!rules.isWin());
         new ViewUserConsoleHelper(playerHelper.getCurrentPlayer()).getWinnerMessage();
         System.exit(0);

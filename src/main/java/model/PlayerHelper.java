@@ -2,7 +2,7 @@ package model;
 
 import view.ViewUserConsoleHelper;
 
-public class PlayerHelper {
+class PlayerHelper {
     private IPlayer byXPlayer;
 
     private IPlayer byOPlayer;
