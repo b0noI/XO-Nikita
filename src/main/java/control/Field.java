@@ -6,8 +6,7 @@ public class Field implements IField {
 
     private final int ARRAY_FIELD_SIZE = 3;
 
-    @SuppressWarnings("CanBeFinal")
-    private Figure[][] figureField = new Figure[ARRAY_FIELD_SIZE][ARRAY_FIELD_SIZE];
+    private final Figure[][] figureField = new Figure[ARRAY_FIELD_SIZE][ARRAY_FIELD_SIZE];
 
     public Figure getFigureFromPosition(final int x, final int y){
         return figureField[x][y];
